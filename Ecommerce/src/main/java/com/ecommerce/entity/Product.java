@@ -24,11 +24,11 @@ public class Product {
 	String productName;
 	String product;
 	String price;
-	
 	Long quantity;
 	
 	@Column(name="category_id")
-		private Long categoryId;
+	private Long categoryId;
+	
 	public Long getProductId() {
 		return productId;
 	}

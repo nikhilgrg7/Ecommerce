@@ -8,10 +8,10 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.ecommerce.entity.Category;
+
 @Repository
-public interface CategoryRepo extends JpaRepository<Category,String> {
+public interface CategoryRepo extends JpaRepository<Category, String> {
 
 	List<Category> findByCategoryName(String categoryName);
 
 }
-

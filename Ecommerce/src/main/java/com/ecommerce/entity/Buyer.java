@@ -1,6 +1,7 @@
 package com.ecommerce.entity;
+
 import javax.persistence.Column;
-import javax.persistence.Entity; 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -9,6 +10,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
+
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Entity
@@ -23,8 +25,8 @@ public class Buyer {
 	String username;
 	String password;
 	String approval;
-	
-	@Column(name="place_order_id")
+
+	@Column(name = "place_order_id")
 	Long placeOrderId;
 
 	public Long getBuyerId() {
@@ -118,6 +120,5 @@ public class Buyer {
 				+ ", getPassword()=" + getPassword() + ", getApproval()=" + getApproval() + ", getPlaceOrderId()="
 				+ getPlaceOrderId() + "]";
 	}
-	
-	
+
 }

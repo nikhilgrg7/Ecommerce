@@ -9,8 +9,8 @@ import com.ecommerce.entity.Admin;
 
 @Repository
 public interface AdminRepo extends JpaRepository<Admin, Long> {
-	
+
 	@Query("SELECT a FROM Admin a WHERE a.adminUsername=:admin_username AND a.password=:password")
-	Admin validate(@Param ("admin_username") String adminUsername, @Param ("password") String password);
+	Admin validate(@Param("admin_username") String adminUsername, @Param("password") String password);
 
 }

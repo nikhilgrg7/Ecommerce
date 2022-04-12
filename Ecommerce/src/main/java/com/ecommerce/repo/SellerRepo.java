@@ -17,15 +17,3 @@ public interface SellerRepo extends JpaRepository<Seller, Long> {
 
 	
 }
-
-	
-
-	
-
-	
-
-	
-
-
-
-
